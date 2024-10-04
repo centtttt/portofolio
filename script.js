@@ -24,3 +24,22 @@ menuIcon.onclick = () => {
     navbar.classList.toggle('active');
 }
 
+function validateForm() {
+    // Validasi Email
+    const email = document.getElementById("email").value;
+    const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+    if (!email.match(emailPattern)) {
+        alert("Please enter a valid email address.");
+        return false;
+    }
+
+    // Validasi Nomor Telepon
+    const phone = document.getElementById("phone").value;
+    if (phone.length < 10) {
+        alert("Please enter a valid phone number.");
+        return false;
+    }
+
+    // Semua validasi terlewati
+    return true;
+}

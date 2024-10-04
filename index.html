@@ -126,7 +126,8 @@
                 <img src="dashboardbdp.png" alt="">
                 <div class="project-info">  
                     <h4>Dashboard Covid-19</h4>
-                    <p>This project is a simple showroom management system implemented in Java, featuring a menu-based interface to manage car information (add, update, delete, and view cars in the showroom). The application also supports multithreading, allowing users to interact responsively while performing showroom operations concurrently.</p>
+                    <p>
+                        This project involves building a COVID-19 dashboard using Looker, with daily data updates from various countries via Google Sheets and BigQuery. Python will be utilized to group countries by COVID-19 death rates, allowing for trend analysis and clustering. The goal is to provide a comprehensive tool for tracking the pandemic and analyzing fatality trends.</p>
                 </div>
                 <div class="project-button">
                     <a href="https://github.com/centtttt/dashboard.git" target="_blank"><button class="button-86" role="button">View Repositories</button></a>
@@ -138,7 +139,7 @@
                 <img src="sentiment-analysis.jpeg" alt="">
                 <div class="project-info">  
                     <h4>Research Paper</h4>
-                    <p>This project is a simple showroom management system implemented in Java, featuring a menu-based interface to manage car information (add, update, delete, and view cars in the showroom). The application also supports multithreading, allowing users to interact responsively while performing showroom operations concurrently.</p>
+                    <p>This paper explores the effectiveness of three machine learning algorithms—Random Forest, Support Vector Machine (SVM), and Naïve Bayes—for sentiment analysis on Twitter posts. The goal is to identify the best method for classifying Twitter sentiment into positive, negative, and neutral categories by comparing the accuracy and F1-score of each algorithm. The study processes Twitter data and compares results using a Kaggle dataset.</p>
                 </div>
                 <div class="project-button">
                     <a href="https://github.com/centtttt/sentiment-analysis.git" target="_blank"><button class="button-86" role="button">View Repositories</button></a>
@@ -276,24 +277,24 @@
 
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me</span></h2>
-        <form action="">
+        <form action="https://formspree.io/f/mqazrvbz" method="POST" onsubmit="return validateForm()">
             <div class="input-group">
                 <div class="input-box">
-                    <input type="text" placeholder="Full Name">
-                    <input type="email" placeholder="Email">
+                    <input type="text" name="name" id="name" placeholder="Full Name" required>
+                    <input type="email" name="email" id="email" placeholder="Email" required>
                 </div>
                 <div class="input-box">
-                    <input type="number" placeholder="Phone Number">
-                    <input type="text" placeholder="Subject">
+                    <input type="number" name="phone" id="phone" placeholder="Phone Number" required>
+                    <input type="text" name="subject" id="subject" placeholder="Subject" required>
                 </div>
             </div>
-
+    
             <div class="input-group-2">
-                <textarea name="" id="" cols="40" rows="12" placeholder="Your Message"></textarea>
+                <textarea name="message" id="message" cols="40" rows="12" placeholder="Your Message" required></textarea>
                 <input type="submit" value="Send Message" class="btn">
             </div>
         </form>
-    </section>   
+    </section> 
 
     <footer class="footer">
         <div class="social">

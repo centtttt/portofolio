@@ -419,7 +419,7 @@ span{
 
 .project-box{
     background-color: var(--main-color);
-    height: 650px;
+    height: 100%;
     border-radius: 3rem;
     border: 5px solid transparent;
     cursor: pointer;
@@ -440,21 +440,23 @@ span{
     display: flex;
     flex-direction: column;
     text-align: left;
-    max-height: 300px;
+    /* max-height: 300px; */
     justify-content: left;
     align-items: baseline;
     padding: 2rem 2rem;
     padding-bottom: 0%;
+    padding-top: 0%;
 }
 
 .project-button{
-    margin-top: 5.5rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 100px;
     align-items: center;
     width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .project-box:hover{
@@ -473,7 +475,6 @@ span{
 .project-info p{
     font-size: 1.6rem;
     font-weight: 600;
-    max-height: 100px;
     line-height: 1.7;
     margin: auto;
 }
@@ -489,7 +490,7 @@ span{
     color: black;
     cursor: pointer;
     z-index: 1;
-    padding: 10px 30px;
+    padding: 10px 35px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -498,6 +499,8 @@ span{
     -webkit-user-select: none;
     touch-action: manipulation;
     font-weight: 600;
+    margin-top: auto;
+    margin: 10px;
 }
 
 .button-86:hover{
