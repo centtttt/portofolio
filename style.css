@@ -845,10 +845,10 @@ span{
         grid-template-columns: repeat(1,1fr);
     }
     .project-box{
-        max-height: 300px;   
+        max-height: auto;   
     }
     .project-info{
-        margin-bottom: 5rem;
+        margin-bottom: 0%;
     }
     .skills{
         padding: 20px;
@@ -857,9 +857,10 @@ span{
         margin-top: 15rem;
     }
     .project-button{
-        transform: scale(0.8);
-        gap: 40px;
-        margin-bottom: 3rem;
+        transform: scale(0.6);
+        gap: 10px;
+        margin-bottom: 0%;
+        margin-top: 0%;
     }
     .certificates-container {
         flex-direction: column; 
