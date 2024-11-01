@@ -118,6 +118,71 @@ span{
     line-height: 1;
 }
 
+.button{
+    margin-top: 3rem;
+    position: relative;
+    width: 180px;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border: 1px solid #fefdff;
+    background-color: var(--main-color);
+    overflow: hidden;
+}
+
+.icon-size{
+    font-size: 18px;
+    color: white;
+}
+
+.button, .btn-icon, .btn-text{
+    transition: all 0.3s;
+}
+
+.button .btn-text{
+    transform: translateX(22px);
+    color: #fff;
+    font-weight: 600;
+}
+
+.button .btn-icon{
+    position: absolute;
+    transform: translateX(138px);
+    height: 100%;
+    width: 40px;
+    background-color: rgb(130, 5, 20);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button .svg{
+    width: 20px;
+    fill: #fff;
+}
+
+.button:hover{
+    background: var(--main-color);
+}
+
+.button:hover .btn-text{
+    color: transparent;
+}
+
+.button:hover .btn-icon{
+    width: 180px;
+    transform: translateX(0);
+}
+
+.button:active .btn-icon{
+    background-color: var(--main-color);
+}
+
+.button:active{
+    border: 1px solid var(--main-color);
+}
+
 .home-img{
     border-radius: 50%;
 }
@@ -744,6 +809,9 @@ span{
         grid-template-columns: repeat(2,1fr);
         margin: 0 5rem;
     }
+    .button{
+        margin-top: 2rem;
+    }
 }
 
 @media(max-width:991px){
@@ -786,6 +854,9 @@ span{
     }
     .footer{
         padding: 2rem 3%;
+    }
+    .button{
+        margin-top: 2rem;
     }
 }
 
@@ -869,5 +940,8 @@ span{
     .certificate-box {
         max-width: 100%; 
         margin-bottom: 20px; 
+    }
+    .button{
+        margin-top: 2rem;
     }
 }
